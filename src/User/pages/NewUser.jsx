@@ -67,7 +67,7 @@ const NewUser = () => {
         linkedIn: data.linkedIn,
         phone: data.tel,
       };
-      const response = await axios.post("http://localhost:5000/api/superuser/signup", formData, {
+      const response = await axios.post("https://employment-management-backend.onrender.com/api/superuser/signup", formData, {
         headers: {
           Authorization: "Bearer " + authUser.token,
         },

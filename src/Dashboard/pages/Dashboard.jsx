@@ -19,7 +19,7 @@ const Dashboard = () => {
   useEffect(() => {
     const getEmployeeDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/users/`);
+        const response = await axios.get(`https://employment-management-backend.onrender.com/api/users/`);
         setEmployee(response.data.user);
       } catch (error) {
         console.log("error is:", error);
