@@ -12,13 +12,21 @@ import getIcon from "../utils/getIcon";
 
 const NavLinks = (item) => {
   return (
-    <Nav.Link
-      className="text-decoration-none text-white mt-1 ms-2 me-2"
-      href={item.link}
+    // <Nav.Link
+    //   className="text-decoration-none text-white mt-1 ms-2 me-2"
+    //   href={item.link}
+    // >
+    //   {getIcon(item.navIcon)}
+    //   {item.navText}
+    // </Nav.Link>
+    <Link
+      to={`${item.link}`}
+      className="text-decoration-none w-auto"
+      key={emp._id}
     >
       {getIcon(item.navIcon)}
       {item.navText}
-    </Nav.Link>
+    </Link>
   );
 };
 
