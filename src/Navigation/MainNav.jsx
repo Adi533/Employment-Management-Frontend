@@ -22,7 +22,6 @@ const NavLinks = (item) => {
     <Link
       to={`${item.link}`}
       className="text-decoration-none w-auto"
-      key={emp._id}
     >
       {getIcon(item.navIcon)}
       {item.navText}
